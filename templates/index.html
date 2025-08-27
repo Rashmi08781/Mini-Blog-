@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini Blog</title>
+    <style>
+        body { font-family: Arial; margin: 20px; }
+        input, textarea { width: 300px; margin-bottom: 5px; }
+        button { margin-top: 5px; }
+        .post { border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Mini Blog</h1>
+    <h2>Create Post</h2>
+    <input id="title" placeholder="Title"><br>
+    <textarea id="content" placeholder="Content"></textarea><br>
+    <input id="author" placeholder="Author"><br>
+    <input id="tags" placeholder="Tags (comma separated)"><br>
+    <input type="checkbox" id="published"> Published<br>
+    <button onclick="createPost()">Create</button>
+
+    <h2>All Posts</h2>
+    <div id="posts"></div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
